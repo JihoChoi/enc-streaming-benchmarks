@@ -1,0 +1,487 @@
+2016-09-21 13:20:28.496 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-09-21 13:20:28.565 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-09-21 13:20:29.093 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-09-21 13:20:29.094 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=pal-nat186-94-18.itap.purdue.edu
+2016-09-21 13:20:29.094 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-09-21 13:20:29.094 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-09-21 13:20:29.094 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-09-21 13:20:29.094 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/conf:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/stormjar.jar
+2016-09-21 13:20:29.094 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/resources/Mac_OS_X-x86_64:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/resources:/usr/local/lib:/opt/local/lib:/usr/lib
+2016-09-21 13:20:29.094 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-09-21 13:20:29.094 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-09-21 13:20:29.094 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-09-21 13:20:29.094 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-09-21 13:20:29.094 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.11.6
+2016-09-21 13:20:29.094 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-09-21 13:20:29.095 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-09-21 13:20:29.095 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/workers/653d97b4-8bdf-4e1d-ae79-136868b03b42
+2016-09-21 13:20:29.100 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-09-21 13:20:29.100 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=pal-nat186-94-18.itap.purdue.edu
+2016-09-21 13:20:29.100 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-09-21 13:20:29.101 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-09-21 13:20:29.101 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-09-21 13:20:29.101 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/conf:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/stormjar.jar
+2016-09-21 13:20:29.103 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/resources/Mac_OS_X-x86_64:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/resources:/usr/local/lib:/opt/local/lib:/usr/lib
+2016-09-21 13:20:29.103 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-09-21 13:20:29.103 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-09-21 13:20:29.103 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-09-21 13:20:29.103 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-09-21 13:20:29.103 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.11.6
+2016-09-21 13:20:29.103 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-09-21 13:20:29.104 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-09-21 13:20:29.104 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/workers/653d97b4-8bdf-4e1d-ae79-136868b03b42
+2016-09-21 13:20:29.224 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-09-21 13:20:29.232 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-09-21 13:20:29.257 b.s.d.worker [INFO] Launching worker for test-topo-1-1474478426 on 6c8d362b-f48c-4c2f-8a74-0f782afb4f27:6700 with id 653d97b4-8bdf-4e1d-ae79-136868b03b42 and conf {"topology.builtin.metrics.bucket.size.secs" 60, "nimbus.childopts" "-Xmx1024m", "ui.filter.params" nil, "storm.cluster.mode" "distributed", "storm.messaging.netty.client_worker_threads" 1, "supervisor.run.worker.as.user" false, "topology.max.task.parallelism" nil, "zmq.threads" 1, "storm.group.mapping.service" "backtype.storm.security.auth.ShellBasedGroupsMapping", "transactional.zookeeper.root" "/transactional", "topology.sleep.spout.wait.strategy.time.ms" 1, "drpc.invocations.port" 3773, "topology.multilang.serializer" "backtype.storm.multilang.JsonSerializer", "storm.messaging.netty.server_worker_threads" 1, "topology.max.error.report.per.interval" 5, "storm.thrift.transport" "backtype.storm.security.auth.SimpleTransportPlugin", "zmq.hwm" 0, "storm.principal.tolocal" "backtype.storm.security.auth.DefaultPrincipalToLocal", "supervisor.worker.shutdown.sleep.secs" 1, "storm.zookeeper.retry.times" 5, "ui.actions.enabled" true, "zmq.linger.millis" 5000, "supervisor.enable" true, "topology.stats.sample.rate" 0.05, "storm.messaging.netty.min_wait_ms" 100, "storm.zookeeper.port" 2181, "supervisor.heartbeat.frequency.secs" 5, "topology.enable.message.timeouts" true, "drpc.worker.threads" 64, "drpc.queue.size" 128, "drpc.https.keystore.password" "", "logviewer.port" 8000, "nimbus.reassign" true, "topology.executor.send.buffer.size" 1024, "topology.spout.wait.strategy" "backtype.storm.spout.SleepSpoutWaitStrategy", "ui.host" "0.0.0.0", "storm.nimbus.retry.interval.millis" 2000, "nimbus.inbox.jar.expiration.secs" 3600, "dev.zookeeper.path" "/tmp/dev-storm-zookeeper", "topology.acker.executors" nil, "topology.fall.back.on.java.serialization" true, "storm.zookeeper.servers" ["localhost"], "nimbus.thrift.threads" 64, "logviewer.cleanup.age.mins" 10080, "topology.worker.childopts" nil, "topology.classpath" nil, "supervisor.monitor.frequency.secs" 3, "nimbus.credential.renewers.freq.secs" 600, "topology.skip.missing.kryo.registrations" false, "drpc.authorizer.acl.filename" "drpc-auth-acl.yaml", "storm.group.mapping.service.cache.duration.secs" 120, "topology.testing.always.try.serialize" false, "nimbus.monitor.freq.secs" 10, "supervisor.supervisors" [], "topology.tasks" nil, "topology.bolts.outgoing.overflow.buffer.enable" false, "storm.messaging.netty.socket.backlog" 500, "topology.workers" 1, "storm.local.dir" "storm-local", "worker.childopts" "-Xmx768m", "storm.auth.simple-white-list.users" [], "topology.message.timeout.secs" 30, "topology.state.synchronization.timeout.secs" 60, "topology.tuple.serializer" "backtype.storm.serialization.types.ListDelegateSerializer", "supervisor.supervisors.commands" [], "logviewer.childopts" "-Xmx128m", "topology.environment" nil, "topology.debug" false, "storm.messaging.netty.max_retries" 300, "ui.childopts" "-Xmx768m", "storm.zookeeper.session.timeout" 20000, "drpc.childopts" "-Xmx768m", "drpc.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.connection.timeout" 15000, "storm.zookeeper.auth.user" nil, "storm.meta.serialization.delegate" "backtype.storm.serialization.GzipThriftSerializationDelegate", "topology.max.spout.pending" nil, "nimbus.supervisor.timeout.secs" 60, "nimbus.task.timeout.secs" 30, "drpc.port" 3772, "storm.zookeeper.retry.intervalceiling.millis" 30000, "nimbus.thrift.port" 6627, "storm.auth.simple-acl.admins" [], "storm.nimbus.retry.times" 5, "supervisor.worker.start.timeout.secs" 120, "storm.zookeeper.retry.interval" 1000, "logs.users" nil, "transactional.zookeeper.port" nil, "drpc.max_buffer_size" 1048576, "task.credentials.poll.secs" 30, "drpc.https.keystore.type" "JKS", "topology.worker.receiver.thread.count" 1, "supervisor.slots.ports" [6700 6701 6702 6703], "topology.transfer.buffer.size" 1024, "topology.worker.shared.thread.pool.size" 4, "drpc.authorizer.acl.strict" false, "nimbus.file.copy.expiration.secs" 600, "topology.executor.receive.buffer.size" 1024, "nimbus.task.launch.secs" 120, "storm.local.mode.zmq" false, "storm.messaging.netty.buffer_size" 5242880, "worker.heartbeat.frequency.secs" 1, "ui.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.root" "/storm", "topology.tick.tuple.freq.secs" nil, "drpc.https.port" -1, "task.refresh.poll.secs" 10, "task.heartbeat.frequency.secs" 3, "storm.messaging.netty.max_wait_ms" 1000, "nimbus.impersonation.authorizer" "backtype.storm.security.auth.authorizer.ImpersonationAuthorizer", "drpc.http.port" 3774, "topology.error.throttle.interval.secs" 10, "storm.messaging.transport" "backtype.storm.messaging.netty.Context", "storm.messaging.netty.authentication" false, "topology.kryo.factory" "backtype.storm.serialization.DefaultKryoFactory", "worker.gc.childopts" "", "nimbus.topology.validator" "backtype.storm.nimbus.DefaultTopologyValidator", "nimbus.cleanup.inbox.freq.secs" 600, "ui.users" nil, "transactional.zookeeper.servers" nil, "supervisor.worker.timeout.secs" 30, "storm.zookeeper.auth.password" nil, "supervisor.childopts" "-Xmx256m", "ui.filter" nil, "ui.header.buffer.bytes" 4096, "topology.disruptor.wait.timeout.millis" 1000, "storm.nimbus.retry.intervalceiling.millis" 60000, "topology.trident.batch.emit.interval.millis" 500, "topology.disruptor.wait.strategy" "com.lmax.disruptor.BlockingWaitStrategy", "storm.auth.simple-acl.users" [], "drpc.invocations.threads" 64, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib", "ui.port" 8080, "storm.messaging.netty.transfer.batch.size" 262144, "logviewer.appender.name" "A1", "nimbus.thrift.max_buffer_size" 1048576, "nimbus.host" "localhost", "storm.auth.simple-acl.users.commands" [], "drpc.request.timeout.secs" 600}
+2016-09-21 13:20:29.277 b.s.u.StormBoundedExponentialBackoffRetry [INFO] The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+2016-09-21 13:20:29.309 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl [INFO] Starting
+2016-09-21 13:20:29.311 o.a.s.s.o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@7f8633ae
+2016-09-21 13:20:29.322 o.a.s.s.o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:20:29.373 o.a.s.s.o.a.z.ClientCnxn [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-09-21 13:20:29.378 o.a.s.s.o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1574dc25e980007, negotiated timeout = 20000
+2016-09-21 13:20:29.379 o.a.s.s.o.a.c.f.s.ConnectionStateManager [INFO] State change: CONNECTED
+2016-09-21 13:20:29.380 b.s.zookeeper [INFO] Zookeeper state update: :connected:none
+2016-09-21 13:20:30.394 o.a.s.s.o.a.z.ZooKeeper [INFO] Session: 0x1574dc25e980007 closed
+2016-09-21 13:20:30.394 o.a.s.s.o.a.z.ClientCnxn [INFO] EventThread shut down
+2016-09-21 13:20:30.395 b.s.u.StormBoundedExponentialBackoffRetry [INFO] The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+2016-09-21 13:20:30.396 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl [INFO] Starting
+2016-09-21 13:20:30.396 o.a.s.s.o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181/storm sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@6401d0a0
+2016-09-21 13:20:30.397 o.a.s.s.o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:20:30.398 o.a.s.s.o.a.z.ClientCnxn [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-09-21 13:20:30.400 o.a.s.s.o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1574dc25e980008, negotiated timeout = 20000
+2016-09-21 13:20:30.400 o.a.s.s.o.a.c.f.s.ConnectionStateManager [INFO] State change: CONNECTED
+2016-09-21 13:20:30.415 b.s.s.a.AuthUtils [INFO] Got AutoCreds []
+2016-09-21 13:20:30.419 b.s.d.worker [INFO] Reading Assignments.
+2016-09-21 13:20:30.446 b.s.m.TransportFactory [INFO] Storm peer transport plugin:backtype.storm.messaging.netty.Context
+2016-09-21 13:20:30.495 b.s.m.n.Server [INFO] Create Netty Server Netty-server-localhost-6700, buffer_size: 5242880, maxWorkers: 1
+2016-09-21 13:20:30.568 b.s.d.worker [INFO] Launching receive-thread for 6c8d362b-f48c-4c2f-8a74-0f782afb4f27:6700
+2016-09-21 13:20:30.571 b.s.m.loader [INFO] Starting receive-thread: [stormId: test-topo-1-1474478426, port: 6700, thread-id: 0 ]
+2016-09-21 13:20:30.741 b.s.d.executor [INFO] Loading executor event_projection:[8 8]
+2016-09-21 13:20:30.750 b.s.d.executor [INFO] Loaded executor tasks event_projection:[8 8]
+2016-09-21 13:20:30.756 b.s.d.executor [INFO] Finished loading executor event_projection:[8 8]
+2016-09-21 13:20:30.763 b.s.d.executor [INFO] Loading executor __acker:[2 2]
+2016-09-21 13:20:30.764 b.s.d.executor [INFO] Loaded executor tasks __acker:[2 2]
+2016-09-21 13:20:30.765 b.s.d.executor [INFO] Timeouts disabled for executor __acker:[2 2]
+2016-09-21 13:20:30.765 b.s.d.executor [INFO] Finished loading executor __acker:[2 2]
+2016-09-21 13:20:30.771 b.s.d.executor [INFO] Loading executor event_filter:[7 7]
+2016-09-21 13:20:30.772 b.s.d.executor [INFO] Loaded executor tasks event_filter:[7 7]
+2016-09-21 13:20:30.774 b.s.d.executor [INFO] Finished loading executor event_filter:[7 7]
+2016-09-21 13:20:30.779 b.s.d.executor [INFO] Loading executor ads:[3 3]
+2016-09-21 13:20:30.788 b.s.d.executor [INFO] Loaded executor tasks ads:[3 3]
+2016-09-21 13:20:30.794 b.s.d.executor [INFO] Finished loading executor ads:[3 3]
+2016-09-21 13:20:30.799 b.s.d.executor [INFO] Loading executor __acker:[1 1]
+2016-09-21 13:20:30.800 b.s.d.executor [INFO] Loaded executor tasks __acker:[1 1]
+2016-09-21 13:20:30.801 b.s.d.executor [INFO] Timeouts disabled for executor __acker:[1 1]
+2016-09-21 13:20:30.802 b.s.d.executor [INFO] Finished loading executor __acker:[1 1]
+2016-09-21 13:20:30.807 b.s.d.executor [INFO] Loading executor event_deserializer:[6 6]
+2016-09-21 13:20:30.809 b.s.d.executor [INFO] Loaded executor tasks event_deserializer:[6 6]
+2016-09-21 13:20:30.810 b.s.d.executor [INFO] Finished loading executor event_deserializer:[6 6]
+2016-09-21 13:20:30.815 b.s.d.executor [INFO] Loading executor redis_join:[9 9]
+2016-09-21 13:20:30.817 b.s.d.executor [INFO] Loaded executor tasks redis_join:[9 9]
+2016-09-21 13:20:30.818 b.s.d.executor [INFO] Finished loading executor redis_join:[9 9]
+2016-09-21 13:20:30.823 b.s.d.executor [INFO] Loading executor __system:[-1 -1]
+2016-09-21 13:20:30.824 b.s.d.executor [INFO] Loaded executor tasks __system:[-1 -1]
+2016-09-21 13:20:30.825 b.s.d.executor [INFO] Finished loading executor __system:[-1 -1]
+2016-09-21 13:20:30.830 b.s.d.executor [INFO] Loading executor campaign_processor:[5 5]
+2016-09-21 13:20:30.833 b.s.d.executor [INFO] Loaded executor tasks campaign_processor:[5 5]
+2016-09-21 13:20:30.834 b.s.d.executor [INFO] Finished loading executor campaign_processor:[5 5]
+2016-09-21 13:20:30.838 b.s.d.executor [INFO] Loading executor campaign_processor:[4 4]
+2016-09-21 13:20:30.839 b.s.d.executor [INFO] Loaded executor tasks campaign_processor:[4 4]
+2016-09-21 13:20:30.840 b.s.d.executor [INFO] Finished loading executor campaign_processor:[4 4]
+2016-09-21 13:20:30.846 b.s.d.worker [INFO] Worker has topology config {"topology.builtin.metrics.bucket.size.secs" 60, "nimbus.childopts" "-Xmx1024m", "ui.filter.params" nil, "storm.cluster.mode" "distributed", "storm.messaging.netty.client_worker_threads" 1, "supervisor.run.worker.as.user" false, "topology.max.task.parallelism" nil, "zmq.threads" 1, "storm.group.mapping.service" "backtype.storm.security.auth.ShellBasedGroupsMapping", "transactional.zookeeper.root" "/transactional", "topology.sleep.spout.wait.strategy.time.ms" 1, "drpc.invocations.port" 3773, "topology.multilang.serializer" "backtype.storm.multilang.JsonSerializer", "storm.messaging.netty.server_worker_threads" 1, "topology.max.error.report.per.interval" 5, "storm.thrift.transport" "backtype.storm.security.auth.SimpleTransportPlugin", "zmq.hwm" 0, "storm.principal.tolocal" "backtype.storm.security.auth.DefaultPrincipalToLocal", "supervisor.worker.shutdown.sleep.secs" 1, "storm.zookeeper.retry.times" 5, "ui.actions.enabled" true, "zmq.linger.millis" 5000, "supervisor.enable" true, "topology.stats.sample.rate" 0.05, "storm.messaging.netty.min_wait_ms" 100, "storm.zookeeper.port" 2181, "supervisor.heartbeat.frequency.secs" 5, "topology.enable.message.timeouts" true, "drpc.worker.threads" 64, "drpc.queue.size" 128, "drpc.https.keystore.password" "", "logviewer.port" 8000, "nimbus.reassign" true, "topology.executor.send.buffer.size" 1024, "topology.spout.wait.strategy" "backtype.storm.spout.SleepSpoutWaitStrategy", "ui.host" "0.0.0.0", "topology.submitter.principal" "", "storm.nimbus.retry.interval.millis" 2000, "nimbus.inbox.jar.expiration.secs" 3600, "dev.zookeeper.path" "/tmp/dev-storm-zookeeper", "topology.acker.executors" 2, "topology.fall.back.on.java.serialization" true, "storm.zookeeper.servers" ["localhost"], "nimbus.thrift.threads" 64, "logviewer.cleanup.age.mins" 10080, "topology.worker.childopts" nil, "topology.classpath" nil, "supervisor.monitor.frequency.secs" 3, "nimbus.credential.renewers.freq.secs" 600, "topology.skip.missing.kryo.registrations" false, "drpc.authorizer.acl.filename" "drpc-auth-acl.yaml", "storm.group.mapping.service.cache.duration.secs" 120, "topology.testing.always.try.serialize" false, "nimbus.monitor.freq.secs" 10, "supervisor.supervisors" [], "topology.tasks" nil, "topology.bolts.outgoing.overflow.buffer.enable" false, "storm.messaging.netty.socket.backlog" 500, "topology.workers" 1, "storm.local.dir" "storm-local", "worker.childopts" "-Xmx768m", "storm.auth.simple-white-list.users" [], "topology.message.timeout.secs" 30, "topology.state.synchronization.timeout.secs" 60, "topology.tuple.serializer" "backtype.storm.serialization.types.ListDelegateSerializer", "supervisor.supervisors.commands" [], "logviewer.childopts" "-Xmx128m", "topology.environment" nil, "topology.debug" false, "storm.messaging.netty.max_retries" 300, "ui.childopts" "-Xmx768m", "storm.zookeeper.session.timeout" 20000, "drpc.childopts" "-Xmx768m", "drpc.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.connection.timeout" 15000, "storm.zookeeper.auth.user" nil, "storm.meta.serialization.delegate" "backtype.storm.serialization.GzipThriftSerializationDelegate", "topology.max.spout.pending" nil, "nimbus.supervisor.timeout.secs" 60, "nimbus.task.timeout.secs" 30, "storm.zookeeper.superACL" nil, "drpc.port" 3772, "storm.zookeeper.retry.intervalceiling.millis" 30000, "nimbus.thrift.port" 6627, "storm.auth.simple-acl.admins" [], "storm.nimbus.retry.times" 5, "supervisor.worker.start.timeout.secs" 120, "storm.zookeeper.retry.interval" 1000, "logs.users" nil, "transactional.zookeeper.port" nil, "drpc.max_buffer_size" 1048576, "task.credentials.poll.secs" 30, "drpc.https.keystore.type" "JKS", "topology.worker.receiver.thread.count" 1, "supervisor.slots.ports" [6700 6701 6702 6703], "topology.transfer.buffer.size" 1024, "topology.worker.shared.thread.pool.size" 4, "drpc.authorizer.acl.strict" false, "nimbus.file.copy.expiration.secs" 600, "topology.executor.receive.buffer.size" 1024, "topology.users" [], "nimbus.task.launch.secs" 120, "storm.local.mode.zmq" false, "storm.messaging.netty.buffer_size" 5242880, "worker.heartbeat.frequency.secs" 1, "ui.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.root" "/storm", "topology.submitter.user" "", "topology.tick.tuple.freq.secs" nil, "drpc.https.port" -1, "task.refresh.poll.secs" 10, "task.heartbeat.frequency.secs" 3, "storm.messaging.netty.max_wait_ms" 1000, "nimbus.impersonation.authorizer" "backtype.storm.security.auth.authorizer.ImpersonationAuthorizer", "drpc.http.port" 3774, "topology.error.throttle.interval.secs" 10, "storm.messaging.transport" "backtype.storm.messaging.netty.Context", "storm.messaging.netty.authentication" false, "topology.kryo.factory" "backtype.storm.serialization.DefaultKryoFactory", "topology.kryo.register" nil, "worker.gc.childopts" "", "nimbus.topology.validator" "backtype.storm.nimbus.DefaultTopologyValidator", "nimbus.cleanup.inbox.freq.secs" 600, "ui.users" nil, "transactional.zookeeper.servers" nil, "supervisor.worker.timeout.secs" 30, "storm.zookeeper.auth.password" nil, "supervisor.childopts" "-Xmx256m", "ui.filter" nil, "ui.header.buffer.bytes" 4096, "topology.disruptor.wait.timeout.millis" 1000, "storm.nimbus.retry.intervalceiling.millis" 60000, "topology.trident.batch.emit.interval.millis" 500, "topology.disruptor.wait.strategy" "com.lmax.disruptor.BlockingWaitStrategy", "storm.auth.simple-acl.users" [], "drpc.invocations.threads" 64, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib", "ui.port" 8080, "topology.kryo.decorators" [], "storm.id" "test-topo-1-1474478426", "topology.name" "test-topo", "storm.messaging.netty.transfer.batch.size" 262144, "logviewer.appender.name" "A1", "nimbus.thrift.max_buffer_size" 1048576, "nimbus.host" "localhost", "storm.auth.simple-acl.users.commands" [], "drpc.request.timeout.secs" 600}
+2016-09-21 13:20:30.847 b.s.d.worker [INFO] Worker 653d97b4-8bdf-4e1d-ae79-136868b03b42 for storm test-topo-1-1474478426 on 6c8d362b-f48c-4c2f-8a74-0f782afb4f27:6700 has finished loading
+2016-09-21 13:20:31.548 b.s.d.worker [INFO] All connections are ready for worker 6c8d362b-f48c-4c2f-8a74-0f782afb4f27:6700 with id 653d97b4-8bdf-4e1d-ae79-136868b03b42
+2016-09-21 13:20:31.560 b.s.d.executor [INFO] Preparing bolt campaign_processor:(5)
+2016-09-21 13:20:31.563 b.s.d.executor [INFO] Preparing bolt campaign_processor:(4)
+2016-09-21 13:20:31.580 b.s.d.executor [INFO] Prepared bolt campaign_processor:(4)
+2016-09-21 13:20:31.580 b.s.d.executor [INFO] Prepared bolt campaign_processor:(5)
+2016-09-21 13:20:31.582 b.s.d.executor [INFO] Preparing bolt event_projection:(8)
+2016-09-21 13:20:31.583 b.s.d.executor [INFO] Prepared bolt event_projection:(8)
+2016-09-21 13:20:31.597 b.s.d.executor [INFO] Preparing bolt __acker:(2)
+2016-09-21 13:20:31.597 b.s.d.executor [INFO] Preparing bolt event_filter:(7)
+2016-09-21 13:20:31.597 b.s.d.executor [INFO] Prepared bolt event_filter:(7)
+2016-09-21 13:20:31.598 b.s.d.executor [INFO] Prepared bolt __acker:(2)
+2016-09-21 13:20:31.625 b.s.d.executor [INFO] Opening spout ads:(3)
+2016-09-21 13:20:31.625 b.s.d.executor [INFO] Preparing bolt __acker:(1)
+2016-09-21 13:20:31.626 b.s.d.executor [INFO] Prepared bolt __acker:(1)
+2016-09-21 13:20:31.651 b.s.d.executor [INFO] Preparing bolt event_deserializer:(6)
+2016-09-21 13:20:31.651 b.s.d.executor [INFO] Preparing bolt __system:(-1)
+2016-09-21 13:20:31.651 b.s.d.executor [INFO] Preparing bolt redis_join:(9)
+2016-09-21 13:20:31.652 b.s.d.executor [INFO] Prepared bolt event_deserializer:(6)
+2016-09-21 13:20:31.652 b.s.d.executor [INFO] Prepared bolt redis_join:(9)
+2016-09-21 13:20:31.656 b.s.d.executor [INFO] Prepared bolt __system:(-1)
+2016-09-21 13:20:31.666 o.a.c.f.i.CuratorFrameworkImpl [INFO] Starting
+2016-09-21 13:20:31.671 o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-09-21 13:20:31.672 o.a.z.ZooKeeper [INFO] Client environment:host.name=pal-nat186-94-18.itap.purdue.edu
+2016-09-21 13:20:31.672 o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-09-21 13:20:31.672 o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-09-21 13:20:31.672 o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-09-21 13:20:31.672 o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/conf:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/stormjar.jar
+2016-09-21 13:20:31.672 o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/resources/Mac_OS_X-x86_64:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/resources:/usr/local/lib:/opt/local/lib:/usr/lib
+2016-09-21 13:20:31.672 o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-09-21 13:20:31.672 o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-09-21 13:20:31.672 o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-09-21 13:20:31.672 o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-09-21 13:20:31.672 o.a.z.ZooKeeper [INFO] Client environment:os.version=10.11.6
+2016-09-21 13:20:31.672 o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-09-21 13:20:31.672 o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-09-21 13:20:31.672 o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/workers/653d97b4-8bdf-4e1d-ae79-136868b03b42
+2016-09-21 13:20:31.673 o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181, sessionTimeout=20000 watcher=org.apache.curator.ConnectionState@1fa93d03
+2016-09-21 13:20:31.684 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:20:31.685 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-09-21 13:20:31.686 o.a.c.f.i.CuratorFrameworkImpl [INFO] Starting
+2016-09-21 13:20:31.686 o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=20000 watcher=org.apache.curator.ConnectionState@33f52c8c
+2016-09-21 13:20:31.687 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:20:31.688 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-09-21 13:20:31.691 o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1574dc25e98000a, negotiated timeout = 20000
+2016-09-21 13:20:31.691 o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1574dc25e980009, negotiated timeout = 20000
+2016-09-21 13:20:31.694 o.a.c.f.s.ConnectionStateManager [INFO] State change: CONNECTED
+2016-09-21 13:20:31.694 o.a.c.f.s.ConnectionStateManager [INFO] State change: CONNECTED
+2016-09-21 13:20:32.719 s.k.DynamicBrokersReader [INFO] Read partition info from zookeeper: GlobalPartitionInformation{partitionMap={0=pal-nat186-94-18.itap.purdue.edu:9092}}
+2016-09-21 13:20:32.720 o.a.c.f.i.CuratorFrameworkImpl [INFO] Starting
+2016-09-21 13:20:32.720 o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=20000 watcher=org.apache.curator.ConnectionState@738f344a
+2016-09-21 13:20:32.722 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:20:32.722 b.s.d.executor [INFO] Opened spout ads:(3)
+2016-09-21 13:20:32.722 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-09-21 13:20:32.724 b.s.d.executor [INFO] Activating spout ads:(3)
+2016-09-21 13:20:32.724 s.k.ZkCoordinator [INFO] Task [1/1] Refreshing partition manager connections
+2016-09-21 13:20:32.725 o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1574dc25e98000b, negotiated timeout = 20000
+2016-09-21 13:20:32.725 o.a.c.f.s.ConnectionStateManager [INFO] State change: CONNECTED
+2016-09-21 13:20:32.728 s.k.DynamicBrokersReader [INFO] Read partition info from zookeeper: GlobalPartitionInformation{partitionMap={0=pal-nat186-94-18.itap.purdue.edu:9092}}
+2016-09-21 13:20:32.729 s.k.KafkaUtils [INFO] Task [1/1] assigned [Partition{host=pal-nat186-94-18.itap.purdue.edu:9092, partition=0}]
+2016-09-21 13:20:32.729 s.k.ZkCoordinator [INFO] Task [1/1] Deleted partition managers: []
+2016-09-21 13:20:32.729 s.k.ZkCoordinator [INFO] Task [1/1] New partition managers: [Partition{host=pal-nat186-94-18.itap.purdue.edu:9092, partition=0}]
+2016-09-21 13:20:32.913 s.k.PartitionManager [INFO] Read partition information from: /ad-events/ec7a8926-6303-4d3c-a663-e748efd05290/partition_0  --> null
+2016-09-21 13:20:32.970 s.k.PartitionManager [INFO] No partition information found, using configuration to determine offset
+2016-09-21 13:20:32.970 s.k.PartitionManager [INFO] Last commit offset from zookeeper: 0
+2016-09-21 13:20:32.971 s.k.PartitionManager [INFO] Commit offset 0 is more than 9223372036854775807 behind latest offset 0, resetting to startOffsetTime=-2
+2016-09-21 13:20:32.971 s.k.PartitionManager [INFO] Starting Kafka pal-nat186-94-18.itap.purdue.edu:0 from offset 0
+2016-09-21 13:20:32.971 s.k.ZkCoordinator [INFO] Task [1/1] Finished refreshing
+2016-09-21 13:21:47.010 s.k.ZkCoordinator [INFO] Task [1/1] Refreshing partition manager connections
+2016-09-21 13:21:48.154 b.s.m.n.Server [INFO] Getting metrics for server on port 6700
+2016-09-21 13:21:47.010 o.a.s.s.o.a.z.ClientCnxn [INFO] Client session timed out, have not heard from server in 27248ms for sessionid 0x1574dc25e980008, closing socket connection and attempting reconnect
+2016-09-21 13:21:48.158 o.a.z.ClientCnxn [INFO] Unable to read additional data from server sessionid 0x1574dc25e98000b, likely server has closed socket, closing socket connection and attempting reconnect
+2016-09-21 13:21:48.158 o.a.z.ClientCnxn [INFO] Unable to read additional data from server sessionid 0x1574dc25e98000a, likely server has closed socket, closing socket connection and attempting reconnect
+2016-09-21 13:21:48.163 o.a.z.ClientCnxn [INFO] Unable to read additional data from server sessionid 0x1574dc25e980009, likely server has closed socket, closing socket connection and attempting reconnect
+2016-09-21 13:21:48.259 o.a.c.f.s.ConnectionStateManager [INFO] State change: SUSPENDED
+2016-09-21 13:21:48.259 o.a.c.f.s.ConnectionStateManager [INFO] State change: SUSPENDED
+2016-09-21 13:21:48.259 o.a.s.s.o.a.c.f.s.ConnectionStateManager [INFO] State change: SUSPENDED
+2016-09-21 13:21:48.262 b.s.cluster [WARN] Received event :disconnected::none: with disconnected Zookeeper.
+2016-09-21 13:21:48.269 o.a.c.f.s.ConnectionStateManager [INFO] State change: SUSPENDED
+2016-09-21 13:21:48.281 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:21:48.282 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-09-21 13:21:48.283 o.a.c.f.s.ConnectionStateManager [INFO] State change: LOST
+2016-09-21 13:21:48.283 o.a.z.ClientCnxn [INFO] Unable to reconnect to ZooKeeper service, session 0x1574dc25e98000a has expired, closing socket connection
+2016-09-21 13:21:48.283 o.a.c.ConnectionState [WARN] Session expired event received
+2016-09-21 13:21:48.284 o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=20000 watcher=org.apache.curator.ConnectionState@33f52c8c
+2016-09-21 13:21:48.284 o.a.z.ClientCnxn [INFO] EventThread shut down
+2016-09-21 13:21:48.285 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:21:48.285 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-09-21 13:21:48.287 o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1574dc25e98000d, negotiated timeout = 20000
+2016-09-21 13:21:48.287 o.a.c.f.s.ConnectionStateManager [INFO] State change: RECONNECTED
+2016-09-21 13:21:48.881 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:21:48.882 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-09-21 13:21:48.883 o.a.z.ClientCnxn [INFO] Unable to reconnect to ZooKeeper service, session 0x1574dc25e980009 has expired, closing socket connection
+2016-09-21 13:21:48.883 o.a.c.f.s.ConnectionStateManager [INFO] State change: LOST
+2016-09-21 13:21:48.883 o.a.c.ConnectionState [WARN] Session expired event received
+2016-09-21 13:21:48.883 o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181, sessionTimeout=20000 watcher=org.apache.curator.ConnectionState@1fa93d03
+2016-09-21 13:21:48.884 o.a.z.ClientCnxn [INFO] EventThread shut down
+2016-09-21 13:21:48.885 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:21:48.885 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-09-21 13:21:48.888 o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1574dc25e98000e, negotiated timeout = 20000
+2016-09-21 13:21:48.888 o.a.c.f.s.ConnectionStateManager [INFO] State change: RECONNECTED
+2016-09-21 13:21:49.150 o.a.s.s.o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:21:49.151 o.a.s.s.o.a.z.ClientCnxn [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-09-21 13:21:49.154 o.a.s.s.o.a.z.ClientCnxn [INFO] Unable to reconnect to ZooKeeper service, session 0x1574dc25e980008 has expired, closing socket connection
+2016-09-21 13:21:49.154 o.a.s.s.o.a.c.f.s.ConnectionStateManager [INFO] State change: LOST
+2016-09-21 13:21:49.155 b.s.cluster [WARN] Received event :expired::none: with disconnected Zookeeper.
+2016-09-21 13:21:49.155 o.a.s.s.o.a.c.ConnectionState [WARN] Session expired event received
+2016-09-21 13:21:49.155 o.a.s.s.o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181/storm sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@6401d0a0
+2016-09-21 13:21:49.156 o.a.s.s.o.a.z.ClientCnxn [INFO] EventThread shut down
+2016-09-21 13:21:49.157 o.a.s.s.o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:21:49.157 o.a.s.s.o.a.z.ClientCnxn [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-09-21 13:21:49.159 o.a.s.s.o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1574dc25e980011, negotiated timeout = 20000
+2016-09-21 13:21:49.159 o.a.s.s.o.a.c.f.s.ConnectionStateManager [INFO] State change: RECONNECTED
+2016-09-21 13:21:49.160 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:21:49.160 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-09-21 13:21:49.160 o.a.c.f.s.ConnectionStateManager [INFO] State change: LOST
+2016-09-21 13:21:49.160 o.a.z.ClientCnxn [INFO] Unable to reconnect to ZooKeeper service, session 0x1574dc25e98000b has expired, closing socket connection
+2016-09-21 13:21:49.161 o.a.c.ConnectionState [WARN] Session expired event received
+2016-09-21 13:21:49.161 o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=20000 watcher=org.apache.curator.ConnectionState@738f344a
+2016-09-21 13:21:49.161 o.a.z.ClientCnxn [INFO] EventThread shut down
+2016-09-21 13:21:49.162 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:21:49.162 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-09-21 13:21:49.163 o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1574dc25e980012, negotiated timeout = 20000
+2016-09-21 13:21:49.164 o.a.c.f.s.ConnectionStateManager [INFO] State change: RECONNECTED
+2016-09-21 13:21:49.274 s.k.DynamicBrokersReader [INFO] Read partition info from zookeeper: GlobalPartitionInformation{partitionMap={0=localhost:9092}}
+2016-09-21 13:21:49.275 s.k.KafkaUtils [INFO] Task [1/1] assigned [Partition{host=localhost:9092, partition=0}]
+2016-09-21 13:21:49.275 s.k.ZkCoordinator [INFO] Task [1/1] Deleted partition managers: [Partition{host=pal-nat186-94-18.itap.purdue.edu:9092, partition=0}]
+2016-09-21 13:21:49.277 s.k.ZkCoordinator [INFO] Task [1/1] New partition managers: [Partition{host=localhost:9092, partition=0}]
+2016-09-21 13:21:49.279 s.k.PartitionManager [INFO] Read partition information from: /ad-events/ec7a8926-6303-4d3c-a663-e748efd05290/partition_0  --> {"partition":0,"offset":6,"topology":{"name":"test-topo","id":"746f2954-c5df-48b1-8485-7e6834dd5174"},"topic":"ad-events","broker":{"port":9092,"host":"pal-nat186-94-18.itap.purdue.edu"}}
+2016-09-21 13:21:49.282 s.k.PartitionManager [INFO] Read last commit offset from zookeeper: 6; old topology_id: 746f2954-c5df-48b1-8485-7e6834dd5174 - new topology_id: 746f2954-c5df-48b1-8485-7e6834dd5174
+2016-09-21 13:21:49.283 s.k.PartitionManager [INFO] Starting Kafka localhost:0 from offset 6
+2016-09-21 13:21:49.283 s.k.ZkCoordinator [INFO] Task [1/1] Finished refreshing
+2016-09-21 13:23:24.013 s.k.ZkCoordinator [INFO] Task [1/1] Refreshing partition manager connections
+2016-09-21 13:23:24.014 b.s.m.n.Server [INFO] Getting metrics for server on port 6700
+2016-09-21 13:23:24.014 o.a.s.s.o.a.z.ClientCnxn [INFO] Client session timed out, have not heard from server in 64589ms for sessionid 0x1574dc25e980011, closing socket connection and attempting reconnect
+2016-09-21 13:23:24.015 o.a.z.ClientCnxn [INFO] Client session timed out, have not heard from server in 67063ms for sessionid 0x1574dc25e980012, closing socket connection and attempting reconnect
+2016-09-21 13:23:24.049 o.a.z.ClientCnxn [INFO] Client session timed out, have not heard from server in 67966ms for sessionid 0x1574dc25e98000d, closing socket connection and attempting reconnect
+2016-09-21 13:23:24.115 o.a.s.s.o.a.c.f.s.ConnectionStateManager [INFO] State change: SUSPENDED
+2016-09-21 13:23:24.115 b.s.cluster [WARN] Received event :disconnected::none: with disconnected Zookeeper.
+2016-09-21 13:23:24.119 o.a.c.f.s.ConnectionStateManager [INFO] State change: SUSPENDED
+2016-09-21 13:23:24.157 o.a.c.f.s.ConnectionStateManager [INFO] State change: SUSPENDED
+2016-09-21 13:23:24.228 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:23:24.228 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-09-21 13:23:24.229 o.a.c.f.s.ConnectionStateManager [INFO] State change: LOST
+2016-09-21 13:23:24.229 o.a.z.ClientCnxn [INFO] Unable to reconnect to ZooKeeper service, session 0x1574dc25e98000d has expired, closing socket connection
+2016-09-21 13:23:24.229 o.a.c.ConnectionState [WARN] Session expired event received
+2016-09-21 13:23:24.229 o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=20000 watcher=org.apache.curator.ConnectionState@33f52c8c
+2016-09-21 13:23:24.230 o.a.z.ClientCnxn [INFO] EventThread shut down
+2016-09-21 13:23:24.230 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:23:24.231 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-09-21 13:23:24.614 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:23:24.772 o.a.s.s.o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:23:24.656 o.a.z.ClientCnxn [INFO] Client session timed out, have not heard from server in 67971ms for sessionid 0x1574dc25e98000e, closing socket connection and attempting reconnect
+2016-09-21 13:23:25.157 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-09-21 13:23:25.158 o.a.s.s.o.a.z.ClientCnxn [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-09-21 13:23:25.160 o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1574dc25e980013, negotiated timeout = 20000
+2016-09-21 13:23:25.160 o.a.c.f.s.ConnectionStateManager [INFO] State change: RECONNECTED
+2016-09-21 13:23:25.165 o.a.z.ClientCnxn [INFO] Unable to reconnect to ZooKeeper service, session 0x1574dc25e980012 has expired, closing socket connection
+2016-09-21 13:23:25.166 o.a.c.f.s.ConnectionStateManager [INFO] State change: LOST
+2016-09-21 13:23:25.166 o.a.c.ConnectionState [WARN] Session expired event received
+2016-09-21 13:23:25.166 o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=20000 watcher=org.apache.curator.ConnectionState@738f344a
+2016-09-21 13:23:25.167 o.a.s.s.o.a.z.ClientCnxn [INFO] Unable to reconnect to ZooKeeper service, session 0x1574dc25e980011 has expired, closing socket connection
+2016-09-21 13:23:25.167 o.a.z.ClientCnxn [INFO] EventThread shut down
+2016-09-21 13:23:25.167 o.a.s.s.o.a.c.f.s.ConnectionStateManager [INFO] State change: LOST
+2016-09-21 13:23:25.168 b.s.cluster [WARN] Received event :expired::none: with disconnected Zookeeper.
+2016-09-21 13:23:25.168 o.a.s.s.o.a.c.ConnectionState [WARN] Session expired event received
+2016-09-21 13:23:25.168 o.a.s.s.o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181/storm sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@6401d0a0
+2016-09-21 13:23:25.169 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:23:25.169 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-09-21 13:23:25.169 o.a.s.s.o.a.z.ClientCnxn [INFO] EventThread shut down
+2016-09-21 13:23:25.170 o.a.s.s.o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:23:25.171 o.a.s.s.o.a.z.ClientCnxn [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-09-21 13:23:25.173 o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1574dc25e980017, negotiated timeout = 20000
+2016-09-21 13:23:25.174 o.a.c.f.s.ConnectionStateManager [INFO] State change: RECONNECTED
+2016-09-21 13:23:25.177 o.a.s.s.o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1574dc25e980018, negotiated timeout = 20000
+2016-09-21 13:23:25.177 o.a.s.s.o.a.c.f.s.ConnectionStateManager [INFO] State change: RECONNECTED
+2016-09-21 13:23:25.180 s.k.DynamicBrokersReader [ERROR] Node /brokers/ids/0 does not exist 
+2016-09-21 13:23:25.180 s.k.DynamicBrokersReader [INFO] Read partition info from zookeeper: GlobalPartitionInformation{partitionMap={}}
+2016-09-21 13:23:25.180 s.k.KafkaUtils [WARN] there are more tasks than partitions (tasks: 1; partitions: 0), some tasks will be idle
+2016-09-21 13:23:25.180 s.k.KafkaUtils [WARN] Task [1/1] no partitions assigned
+2016-09-21 13:23:25.180 s.k.ZkCoordinator [INFO] Task [1/1] Deleted partition managers: [Partition{host=localhost:9092, partition=0}]
+2016-09-21 13:23:25.181 s.k.ZkCoordinator [INFO] Task [1/1] New partition managers: []
+2016-09-21 13:23:25.181 s.k.ZkCoordinator [INFO] Task [1/1] Finished refreshing
+2016-09-21 13:23:27.778 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-09-21 13:23:27.844 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-09-21 13:23:28.344 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-09-21 13:23:28.344 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=pal-nat186-94-18.itap.purdue.edu
+2016-09-21 13:23:28.344 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-09-21 13:23:28.344 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-09-21 13:23:28.344 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-09-21 13:23:28.344 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/conf:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/stormjar.jar
+2016-09-21 13:23:28.345 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/resources/Mac_OS_X-x86_64:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/resources:/usr/local/lib:/opt/local/lib:/usr/lib
+2016-09-21 13:23:28.345 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-09-21 13:23:28.345 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-09-21 13:23:28.345 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-09-21 13:23:28.345 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-09-21 13:23:28.345 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.11.6
+2016-09-21 13:23:28.345 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-09-21 13:23:28.345 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-09-21 13:23:28.345 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/workers/bdfdb1d8-f272-45e8-a63f-7990e574e031
+2016-09-21 13:23:28.351 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-09-21 13:23:28.351 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=pal-nat186-94-18.itap.purdue.edu
+2016-09-21 13:23:28.351 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-09-21 13:23:28.351 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-09-21 13:23:28.351 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-09-21 13:23:28.351 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/conf:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/stormjar.jar
+2016-09-21 13:23:28.353 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/resources/Mac_OS_X-x86_64:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/resources:/usr/local/lib:/opt/local/lib:/usr/lib
+2016-09-21 13:23:28.353 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-09-21 13:23:28.353 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-09-21 13:23:28.353 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-09-21 13:23:28.353 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-09-21 13:23:28.354 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.11.6
+2016-09-21 13:23:28.354 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-09-21 13:23:28.354 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-09-21 13:23:28.354 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/workers/bdfdb1d8-f272-45e8-a63f-7990e574e031
+2016-09-21 13:23:28.475 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-09-21 13:23:28.482 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-09-21 13:23:28.512 b.s.d.worker [INFO] Launching worker for test-topo-1-1474478426 on 6c8d362b-f48c-4c2f-8a74-0f782afb4f27:6700 with id bdfdb1d8-f272-45e8-a63f-7990e574e031 and conf {"topology.builtin.metrics.bucket.size.secs" 60, "nimbus.childopts" "-Xmx1024m", "ui.filter.params" nil, "storm.cluster.mode" "distributed", "storm.messaging.netty.client_worker_threads" 1, "supervisor.run.worker.as.user" false, "topology.max.task.parallelism" nil, "zmq.threads" 1, "storm.group.mapping.service" "backtype.storm.security.auth.ShellBasedGroupsMapping", "transactional.zookeeper.root" "/transactional", "topology.sleep.spout.wait.strategy.time.ms" 1, "drpc.invocations.port" 3773, "topology.multilang.serializer" "backtype.storm.multilang.JsonSerializer", "storm.messaging.netty.server_worker_threads" 1, "topology.max.error.report.per.interval" 5, "storm.thrift.transport" "backtype.storm.security.auth.SimpleTransportPlugin", "zmq.hwm" 0, "storm.principal.tolocal" "backtype.storm.security.auth.DefaultPrincipalToLocal", "supervisor.worker.shutdown.sleep.secs" 1, "storm.zookeeper.retry.times" 5, "ui.actions.enabled" true, "zmq.linger.millis" 5000, "supervisor.enable" true, "topology.stats.sample.rate" 0.05, "storm.messaging.netty.min_wait_ms" 100, "storm.zookeeper.port" 2181, "supervisor.heartbeat.frequency.secs" 5, "topology.enable.message.timeouts" true, "drpc.worker.threads" 64, "drpc.queue.size" 128, "drpc.https.keystore.password" "", "logviewer.port" 8000, "nimbus.reassign" true, "topology.executor.send.buffer.size" 1024, "topology.spout.wait.strategy" "backtype.storm.spout.SleepSpoutWaitStrategy", "ui.host" "0.0.0.0", "storm.nimbus.retry.interval.millis" 2000, "nimbus.inbox.jar.expiration.secs" 3600, "dev.zookeeper.path" "/tmp/dev-storm-zookeeper", "topology.acker.executors" nil, "topology.fall.back.on.java.serialization" true, "storm.zookeeper.servers" ["localhost"], "nimbus.thrift.threads" 64, "logviewer.cleanup.age.mins" 10080, "topology.worker.childopts" nil, "topology.classpath" nil, "supervisor.monitor.frequency.secs" 3, "nimbus.credential.renewers.freq.secs" 600, "topology.skip.missing.kryo.registrations" false, "drpc.authorizer.acl.filename" "drpc-auth-acl.yaml", "storm.group.mapping.service.cache.duration.secs" 120, "topology.testing.always.try.serialize" false, "nimbus.monitor.freq.secs" 10, "supervisor.supervisors" [], "topology.tasks" nil, "topology.bolts.outgoing.overflow.buffer.enable" false, "storm.messaging.netty.socket.backlog" 500, "topology.workers" 1, "storm.local.dir" "storm-local", "worker.childopts" "-Xmx768m", "storm.auth.simple-white-list.users" [], "topology.message.timeout.secs" 30, "topology.state.synchronization.timeout.secs" 60, "topology.tuple.serializer" "backtype.storm.serialization.types.ListDelegateSerializer", "supervisor.supervisors.commands" [], "logviewer.childopts" "-Xmx128m", "topology.environment" nil, "topology.debug" false, "storm.messaging.netty.max_retries" 300, "ui.childopts" "-Xmx768m", "storm.zookeeper.session.timeout" 20000, "drpc.childopts" "-Xmx768m", "drpc.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.connection.timeout" 15000, "storm.zookeeper.auth.user" nil, "storm.meta.serialization.delegate" "backtype.storm.serialization.GzipThriftSerializationDelegate", "topology.max.spout.pending" nil, "nimbus.supervisor.timeout.secs" 60, "nimbus.task.timeout.secs" 30, "drpc.port" 3772, "storm.zookeeper.retry.intervalceiling.millis" 30000, "nimbus.thrift.port" 6627, "storm.auth.simple-acl.admins" [], "storm.nimbus.retry.times" 5, "supervisor.worker.start.timeout.secs" 120, "storm.zookeeper.retry.interval" 1000, "logs.users" nil, "transactional.zookeeper.port" nil, "drpc.max_buffer_size" 1048576, "task.credentials.poll.secs" 30, "drpc.https.keystore.type" "JKS", "topology.worker.receiver.thread.count" 1, "supervisor.slots.ports" [6700 6701 6702 6703], "topology.transfer.buffer.size" 1024, "topology.worker.shared.thread.pool.size" 4, "drpc.authorizer.acl.strict" false, "nimbus.file.copy.expiration.secs" 600, "topology.executor.receive.buffer.size" 1024, "nimbus.task.launch.secs" 120, "storm.local.mode.zmq" false, "storm.messaging.netty.buffer_size" 5242880, "worker.heartbeat.frequency.secs" 1, "ui.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.root" "/storm", "topology.tick.tuple.freq.secs" nil, "drpc.https.port" -1, "task.refresh.poll.secs" 10, "task.heartbeat.frequency.secs" 3, "storm.messaging.netty.max_wait_ms" 1000, "nimbus.impersonation.authorizer" "backtype.storm.security.auth.authorizer.ImpersonationAuthorizer", "drpc.http.port" 3774, "topology.error.throttle.interval.secs" 10, "storm.messaging.transport" "backtype.storm.messaging.netty.Context", "storm.messaging.netty.authentication" false, "topology.kryo.factory" "backtype.storm.serialization.DefaultKryoFactory", "worker.gc.childopts" "", "nimbus.topology.validator" "backtype.storm.nimbus.DefaultTopologyValidator", "nimbus.cleanup.inbox.freq.secs" 600, "ui.users" nil, "transactional.zookeeper.servers" nil, "supervisor.worker.timeout.secs" 30, "storm.zookeeper.auth.password" nil, "supervisor.childopts" "-Xmx256m", "ui.filter" nil, "ui.header.buffer.bytes" 4096, "topology.disruptor.wait.timeout.millis" 1000, "storm.nimbus.retry.intervalceiling.millis" 60000, "topology.trident.batch.emit.interval.millis" 500, "topology.disruptor.wait.strategy" "com.lmax.disruptor.BlockingWaitStrategy", "storm.auth.simple-acl.users" [], "drpc.invocations.threads" 64, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib", "ui.port" 8080, "storm.messaging.netty.transfer.batch.size" 262144, "logviewer.appender.name" "A1", "nimbus.thrift.max_buffer_size" 1048576, "nimbus.host" "localhost", "storm.auth.simple-acl.users.commands" [], "drpc.request.timeout.secs" 600}
+2016-09-21 13:23:28.533 b.s.u.StormBoundedExponentialBackoffRetry [INFO] The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+2016-09-21 13:23:28.565 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl [INFO] Starting
+2016-09-21 13:23:28.567 o.a.s.s.o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@7f8633ae
+2016-09-21 13:23:28.578 o.a.s.s.o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:23:28.629 o.a.s.s.o.a.z.ClientCnxn [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-09-21 13:23:28.636 o.a.s.s.o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1574dc25e980019, negotiated timeout = 20000
+2016-09-21 13:23:28.637 o.a.s.s.o.a.c.f.s.ConnectionStateManager [INFO] State change: CONNECTED
+2016-09-21 13:23:28.638 b.s.zookeeper [INFO] Zookeeper state update: :connected:none
+2016-09-21 13:23:29.657 o.a.s.s.o.a.z.ClientCnxn [INFO] EventThread shut down
+2016-09-21 13:23:29.657 o.a.s.s.o.a.z.ZooKeeper [INFO] Session: 0x1574dc25e980019 closed
+2016-09-21 13:23:29.658 b.s.u.StormBoundedExponentialBackoffRetry [INFO] The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+2016-09-21 13:23:29.659 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl [INFO] Starting
+2016-09-21 13:23:29.659 o.a.s.s.o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181/storm sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@6401d0a0
+2016-09-21 13:23:29.660 o.a.s.s.o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:23:29.661 o.a.s.s.o.a.z.ClientCnxn [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-09-21 13:23:29.662 o.a.s.s.o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1574dc25e98001a, negotiated timeout = 20000
+2016-09-21 13:23:29.663 o.a.s.s.o.a.c.f.s.ConnectionStateManager [INFO] State change: CONNECTED
+2016-09-21 13:23:29.678 b.s.s.a.AuthUtils [INFO] Got AutoCreds []
+2016-09-21 13:23:29.681 b.s.d.worker [INFO] Reading Assignments.
+2016-09-21 13:23:29.706 b.s.m.TransportFactory [INFO] Storm peer transport plugin:backtype.storm.messaging.netty.Context
+2016-09-21 13:23:29.739 b.s.m.n.Server [INFO] Create Netty Server Netty-server-localhost-6700, buffer_size: 5242880, maxWorkers: 1
+2016-09-21 13:23:29.836 b.s.d.worker [INFO] Launching receive-thread for 6c8d362b-f48c-4c2f-8a74-0f782afb4f27:6700
+2016-09-21 13:23:29.840 b.s.m.loader [INFO] Starting receive-thread: [stormId: test-topo-1-1474478426, port: 6700, thread-id: 0 ]
+2016-09-21 13:23:30.043 b.s.d.executor [INFO] Loading executor event_projection:[8 8]
+2016-09-21 13:23:30.054 b.s.d.executor [INFO] Loaded executor tasks event_projection:[8 8]
+2016-09-21 13:23:30.062 b.s.d.executor [INFO] Finished loading executor event_projection:[8 8]
+2016-09-21 13:23:30.071 b.s.d.executor [INFO] Loading executor __acker:[2 2]
+2016-09-21 13:23:30.072 b.s.d.executor [INFO] Loaded executor tasks __acker:[2 2]
+2016-09-21 13:23:30.074 b.s.d.executor [INFO] Timeouts disabled for executor __acker:[2 2]
+2016-09-21 13:23:30.074 b.s.d.executor [INFO] Finished loading executor __acker:[2 2]
+2016-09-21 13:23:30.080 b.s.d.executor [INFO] Loading executor event_filter:[7 7]
+2016-09-21 13:23:30.082 b.s.d.executor [INFO] Loaded executor tasks event_filter:[7 7]
+2016-09-21 13:23:30.084 b.s.d.executor [INFO] Finished loading executor event_filter:[7 7]
+2016-09-21 13:23:30.090 b.s.d.executor [INFO] Loading executor ads:[3 3]
+2016-09-21 13:23:30.100 b.s.d.executor [INFO] Loaded executor tasks ads:[3 3]
+2016-09-21 13:23:30.107 b.s.d.executor [INFO] Finished loading executor ads:[3 3]
+2016-09-21 13:23:30.112 b.s.d.executor [INFO] Loading executor __acker:[1 1]
+2016-09-21 13:23:30.113 b.s.d.executor [INFO] Loaded executor tasks __acker:[1 1]
+2016-09-21 13:23:30.115 b.s.d.executor [INFO] Timeouts disabled for executor __acker:[1 1]
+2016-09-21 13:23:30.115 b.s.d.executor [INFO] Finished loading executor __acker:[1 1]
+2016-09-21 13:23:30.122 b.s.d.executor [INFO] Loading executor event_deserializer:[6 6]
+2016-09-21 13:23:30.124 b.s.d.executor [INFO] Loaded executor tasks event_deserializer:[6 6]
+2016-09-21 13:23:30.126 b.s.d.executor [INFO] Finished loading executor event_deserializer:[6 6]
+2016-09-21 13:23:30.131 b.s.d.executor [INFO] Loading executor redis_join:[9 9]
+2016-09-21 13:23:30.134 b.s.d.executor [INFO] Loaded executor tasks redis_join:[9 9]
+2016-09-21 13:23:30.135 b.s.d.executor [INFO] Finished loading executor redis_join:[9 9]
+2016-09-21 13:23:30.140 b.s.d.executor [INFO] Loading executor __system:[-1 -1]
+2016-09-21 13:23:30.141 b.s.d.executor [INFO] Loaded executor tasks __system:[-1 -1]
+2016-09-21 13:23:30.144 b.s.d.executor [INFO] Finished loading executor __system:[-1 -1]
+2016-09-21 13:23:30.149 b.s.d.executor [INFO] Loading executor campaign_processor:[5 5]
+2016-09-21 13:23:30.153 b.s.d.executor [INFO] Loaded executor tasks campaign_processor:[5 5]
+2016-09-21 13:23:30.155 b.s.d.executor [INFO] Finished loading executor campaign_processor:[5 5]
+2016-09-21 13:23:30.162 b.s.d.executor [INFO] Loading executor campaign_processor:[4 4]
+2016-09-21 13:23:30.163 b.s.d.executor [INFO] Loaded executor tasks campaign_processor:[4 4]
+2016-09-21 13:23:30.166 b.s.d.executor [INFO] Finished loading executor campaign_processor:[4 4]
+2016-09-21 13:23:30.177 b.s.d.worker [INFO] Worker has topology config {"topology.builtin.metrics.bucket.size.secs" 60, "nimbus.childopts" "-Xmx1024m", "ui.filter.params" nil, "storm.cluster.mode" "distributed", "storm.messaging.netty.client_worker_threads" 1, "supervisor.run.worker.as.user" false, "topology.max.task.parallelism" nil, "zmq.threads" 1, "storm.group.mapping.service" "backtype.storm.security.auth.ShellBasedGroupsMapping", "transactional.zookeeper.root" "/transactional", "topology.sleep.spout.wait.strategy.time.ms" 1, "drpc.invocations.port" 3773, "topology.multilang.serializer" "backtype.storm.multilang.JsonSerializer", "storm.messaging.netty.server_worker_threads" 1, "topology.max.error.report.per.interval" 5, "storm.thrift.transport" "backtype.storm.security.auth.SimpleTransportPlugin", "zmq.hwm" 0, "storm.principal.tolocal" "backtype.storm.security.auth.DefaultPrincipalToLocal", "supervisor.worker.shutdown.sleep.secs" 1, "storm.zookeeper.retry.times" 5, "ui.actions.enabled" true, "zmq.linger.millis" 5000, "supervisor.enable" true, "topology.stats.sample.rate" 0.05, "storm.messaging.netty.min_wait_ms" 100, "storm.zookeeper.port" 2181, "supervisor.heartbeat.frequency.secs" 5, "topology.enable.message.timeouts" true, "drpc.worker.threads" 64, "drpc.queue.size" 128, "drpc.https.keystore.password" "", "logviewer.port" 8000, "nimbus.reassign" true, "topology.executor.send.buffer.size" 1024, "topology.spout.wait.strategy" "backtype.storm.spout.SleepSpoutWaitStrategy", "ui.host" "0.0.0.0", "topology.submitter.principal" "", "storm.nimbus.retry.interval.millis" 2000, "nimbus.inbox.jar.expiration.secs" 3600, "dev.zookeeper.path" "/tmp/dev-storm-zookeeper", "topology.acker.executors" 2, "topology.fall.back.on.java.serialization" true, "storm.zookeeper.servers" ["localhost"], "nimbus.thrift.threads" 64, "logviewer.cleanup.age.mins" 10080, "topology.worker.childopts" nil, "topology.classpath" nil, "supervisor.monitor.frequency.secs" 3, "nimbus.credential.renewers.freq.secs" 600, "topology.skip.missing.kryo.registrations" false, "drpc.authorizer.acl.filename" "drpc-auth-acl.yaml", "storm.group.mapping.service.cache.duration.secs" 120, "topology.testing.always.try.serialize" false, "nimbus.monitor.freq.secs" 10, "supervisor.supervisors" [], "topology.tasks" nil, "topology.bolts.outgoing.overflow.buffer.enable" false, "storm.messaging.netty.socket.backlog" 500, "topology.workers" 1, "storm.local.dir" "storm-local", "worker.childopts" "-Xmx768m", "storm.auth.simple-white-list.users" [], "topology.message.timeout.secs" 30, "topology.state.synchronization.timeout.secs" 60, "topology.tuple.serializer" "backtype.storm.serialization.types.ListDelegateSerializer", "supervisor.supervisors.commands" [], "logviewer.childopts" "-Xmx128m", "topology.environment" nil, "topology.debug" false, "storm.messaging.netty.max_retries" 300, "ui.childopts" "-Xmx768m", "storm.zookeeper.session.timeout" 20000, "drpc.childopts" "-Xmx768m", "drpc.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.connection.timeout" 15000, "storm.zookeeper.auth.user" nil, "storm.meta.serialization.delegate" "backtype.storm.serialization.GzipThriftSerializationDelegate", "topology.max.spout.pending" nil, "nimbus.supervisor.timeout.secs" 60, "nimbus.task.timeout.secs" 30, "storm.zookeeper.superACL" nil, "drpc.port" 3772, "storm.zookeeper.retry.intervalceiling.millis" 30000, "nimbus.thrift.port" 6627, "storm.auth.simple-acl.admins" [], "storm.nimbus.retry.times" 5, "supervisor.worker.start.timeout.secs" 120, "storm.zookeeper.retry.interval" 1000, "logs.users" nil, "transactional.zookeeper.port" nil, "drpc.max_buffer_size" 1048576, "task.credentials.poll.secs" 30, "drpc.https.keystore.type" "JKS", "topology.worker.receiver.thread.count" 1, "supervisor.slots.ports" [6700 6701 6702 6703], "topology.transfer.buffer.size" 1024, "topology.worker.shared.thread.pool.size" 4, "drpc.authorizer.acl.strict" false, "nimbus.file.copy.expiration.secs" 600, "topology.executor.receive.buffer.size" 1024, "topology.users" [], "nimbus.task.launch.secs" 120, "storm.local.mode.zmq" false, "storm.messaging.netty.buffer_size" 5242880, "worker.heartbeat.frequency.secs" 1, "ui.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.root" "/storm", "topology.submitter.user" "", "topology.tick.tuple.freq.secs" nil, "drpc.https.port" -1, "task.refresh.poll.secs" 10, "task.heartbeat.frequency.secs" 3, "storm.messaging.netty.max_wait_ms" 1000, "nimbus.impersonation.authorizer" "backtype.storm.security.auth.authorizer.ImpersonationAuthorizer", "drpc.http.port" 3774, "topology.error.throttle.interval.secs" 10, "storm.messaging.transport" "backtype.storm.messaging.netty.Context", "storm.messaging.netty.authentication" false, "topology.kryo.factory" "backtype.storm.serialization.DefaultKryoFactory", "topology.kryo.register" nil, "worker.gc.childopts" "", "nimbus.topology.validator" "backtype.storm.nimbus.DefaultTopologyValidator", "nimbus.cleanup.inbox.freq.secs" 600, "ui.users" nil, "transactional.zookeeper.servers" nil, "supervisor.worker.timeout.secs" 30, "storm.zookeeper.auth.password" nil, "supervisor.childopts" "-Xmx256m", "ui.filter" nil, "ui.header.buffer.bytes" 4096, "topology.disruptor.wait.timeout.millis" 1000, "storm.nimbus.retry.intervalceiling.millis" 60000, "topology.trident.batch.emit.interval.millis" 500, "topology.disruptor.wait.strategy" "com.lmax.disruptor.BlockingWaitStrategy", "storm.auth.simple-acl.users" [], "drpc.invocations.threads" 64, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib", "ui.port" 8080, "topology.kryo.decorators" [], "storm.id" "test-topo-1-1474478426", "topology.name" "test-topo", "storm.messaging.netty.transfer.batch.size" 262144, "logviewer.appender.name" "A1", "nimbus.thrift.max_buffer_size" 1048576, "nimbus.host" "localhost", "storm.auth.simple-acl.users.commands" [], "drpc.request.timeout.secs" 600}
+2016-09-21 13:23:30.177 b.s.d.worker [INFO] Worker bdfdb1d8-f272-45e8-a63f-7990e574e031 for storm test-topo-1-1474478426 on 6c8d362b-f48c-4c2f-8a74-0f782afb4f27:6700 has finished loading
+2016-09-21 13:23:30.810 b.s.d.worker [INFO] All connections are ready for worker 6c8d362b-f48c-4c2f-8a74-0f782afb4f27:6700 with id bdfdb1d8-f272-45e8-a63f-7990e574e031
+2016-09-21 13:23:30.820 b.s.d.executor [INFO] Preparing bolt event_filter:(7)
+2016-09-21 13:23:30.824 b.s.d.executor [INFO] Prepared bolt event_filter:(7)
+2016-09-21 13:23:30.844 b.s.d.executor [INFO] Opening spout ads:(3)
+2016-09-21 13:23:30.854 b.s.d.executor [INFO] Preparing bolt __acker:(1)
+2016-09-21 13:23:30.855 b.s.d.executor [INFO] Prepared bolt __acker:(1)
+2016-09-21 13:23:30.871 b.s.d.executor [INFO] Preparing bolt event_deserializer:(6)
+2016-09-21 13:23:30.871 b.s.d.executor [INFO] Prepared bolt event_deserializer:(6)
+2016-09-21 13:23:30.882 b.s.d.executor [INFO] Preparing bolt __system:(-1)
+2016-09-21 13:23:30.882 b.s.d.executor [INFO] Preparing bolt redis_join:(9)
+2016-09-21 13:23:30.884 b.s.d.executor [INFO] Prepared bolt __system:(-1)
+2016-09-21 13:23:30.893 b.s.d.executor [INFO] Preparing bolt campaign_processor:(5)
+2016-09-21 13:23:30.898 o.a.c.f.i.CuratorFrameworkImpl [INFO] Starting
+2016-09-21 13:23:30.900 b.s.d.executor [INFO] Prepared bolt redis_join:(9)
+2016-09-21 13:23:30.900 b.s.d.executor [INFO] Prepared bolt campaign_processor:(5)
+2016-09-21 13:23:30.905 o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-09-21 13:23:30.905 o.a.z.ZooKeeper [INFO] Client environment:host.name=pal-nat186-94-18.itap.purdue.edu
+2016-09-21 13:23:30.906 o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-09-21 13:23:30.906 o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-09-21 13:23:30.906 o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-09-21 13:23:30.906 o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/conf:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/stormjar.jar
+2016-09-21 13:23:30.906 o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/resources/Mac_OS_X-x86_64:/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/supervisor/stormdist/test-topo-1-1474478426/resources:/usr/local/lib:/opt/local/lib:/usr/lib
+2016-09-21 13:23:30.906 o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-09-21 13:23:30.906 o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-09-21 13:23:30.906 o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-09-21 13:23:30.906 o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-09-21 13:23:30.907 o.a.z.ZooKeeper [INFO] Client environment:os.version=10.11.6
+2016-09-21 13:23:30.907 o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-09-21 13:23:30.907 o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-09-21 13:23:30.907 o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/research/streaming-benchmarks/apache-storm-0.10.0/storm-local/workers/bdfdb1d8-f272-45e8-a63f-7990e574e031
+2016-09-21 13:23:30.908 o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181, sessionTimeout=20000 watcher=org.apache.curator.ConnectionState@7261a5a1
+2016-09-21 13:23:30.918 b.s.d.executor [INFO] Preparing bolt campaign_processor:(4)
+2016-09-21 13:23:30.918 b.s.d.executor [INFO] Preparing bolt __acker:(2)
+2016-09-21 13:23:30.918 b.s.d.executor [INFO] Preparing bolt event_projection:(8)
+2016-09-21 13:23:30.919 b.s.d.executor [INFO] Prepared bolt __acker:(2)
+2016-09-21 13:23:30.919 b.s.d.executor [INFO] Prepared bolt event_projection:(8)
+2016-09-21 13:23:30.920 b.s.d.executor [INFO] Prepared bolt campaign_processor:(4)
+2016-09-21 13:23:30.928 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:23:30.928 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-09-21 13:23:30.934 o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1574dc25e98001b, negotiated timeout = 20000
+2016-09-21 13:23:30.937 o.a.c.f.i.CuratorFrameworkImpl [INFO] Starting
+2016-09-21 13:23:30.937 o.a.c.f.s.ConnectionStateManager [INFO] State change: CONNECTED
+2016-09-21 13:23:30.939 o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=20000 watcher=org.apache.curator.ConnectionState@4d914ca3
+2016-09-21 13:23:30.940 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:23:30.940 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-09-21 13:23:30.942 o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1574dc25e98001c, negotiated timeout = 20000
+2016-09-21 13:23:30.942 o.a.c.f.s.ConnectionStateManager [INFO] State change: CONNECTED
+2016-09-21 13:23:30.965 s.k.DynamicBrokersReader [INFO] Read partition info from zookeeper: GlobalPartitionInformation{partitionMap={0=localhost:9092}}
+2016-09-21 13:23:30.966 o.a.c.f.i.CuratorFrameworkImpl [INFO] Starting
+2016-09-21 13:23:30.966 o.a.z.ZooKeeper [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=20000 watcher=org.apache.curator.ConnectionState@65825036
+2016-09-21 13:23:30.967 o.a.z.ClientCnxn [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-09-21 13:23:30.969 o.a.z.ClientCnxn [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-09-21 13:23:30.970 b.s.d.executor [INFO] Opened spout ads:(3)
+2016-09-21 13:23:30.970 o.a.z.ClientCnxn [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1574dc25e98001d, negotiated timeout = 20000
+2016-09-21 13:23:30.970 o.a.c.f.s.ConnectionStateManager [INFO] State change: CONNECTED
+2016-09-21 13:23:30.972 b.s.d.executor [INFO] Activating spout ads:(3)
+2016-09-21 13:23:30.972 s.k.ZkCoordinator [INFO] Task [1/1] Refreshing partition manager connections
+2016-09-21 13:23:30.974 s.k.DynamicBrokersReader [INFO] Read partition info from zookeeper: GlobalPartitionInformation{partitionMap={0=localhost:9092}}
+2016-09-21 13:23:30.975 s.k.KafkaUtils [INFO] Task [1/1] assigned [Partition{host=localhost:9092, partition=0}]
+2016-09-21 13:23:30.975 s.k.ZkCoordinator [INFO] Task [1/1] Deleted partition managers: []
+2016-09-21 13:23:30.975 s.k.ZkCoordinator [INFO] Task [1/1] New partition managers: [Partition{host=localhost:9092, partition=0}]
+2016-09-21 13:23:31.195 s.k.PartitionManager [INFO] Read partition information from: /ad-events/ec7a8926-6303-4d3c-a663-e748efd05290/partition_0  --> {"partition":0,"offset":6,"topology":{"name":"test-topo","id":"746f2954-c5df-48b1-8485-7e6834dd5174"},"topic":"ad-events","broker":{"port":9092,"host":"pal-nat186-94-18.itap.purdue.edu"}}
+2016-09-21 13:23:31.264 s.k.PartitionManager [INFO] Read last commit offset from zookeeper: 6; old topology_id: 746f2954-c5df-48b1-8485-7e6834dd5174 - new topology_id: 746f2954-c5df-48b1-8485-7e6834dd5174
+2016-09-21 13:23:31.264 s.k.PartitionManager [INFO] Starting Kafka localhost:0 from offset 6
+2016-09-21 13:23:31.265 s.k.ZkCoordinator [INFO] Task [1/1] Finished refreshing
+2016-09-21 13:23:35.334 b.s.d.worker [INFO] Shutting down worker test-topo-1-1474478426 6c8d362b-f48c-4c2f-8a74-0f782afb4f27 6700
+2016-09-21 13:23:35.335 b.s.d.worker [INFO] Shutting down receive thread
+2016-09-21 13:23:35.436 b.s.m.loader [INFO] Shutting down receiving-thread: [test-topo-1-1474478426, 6700]
+2016-09-21 13:23:35.439 b.s.m.loader [INFO] Waiting for receiving-thread:[test-topo-1-1474478426, 6700] to die
+2016-09-21 13:23:35.443 b.s.m.loader [INFO] Shutdown receiving-thread: [test-topo-1-1474478426, 6700]
+2016-09-21 13:23:35.445 b.s.d.worker [INFO] Shut down receive thread
+2016-09-21 13:23:35.446 b.s.d.worker [INFO] Terminating messaging context
+2016-09-21 13:23:35.447 b.s.d.worker [INFO] Shutting down executors
+2016-09-21 13:23:35.449 b.s.d.executor [INFO] Shutting down executor event_projection:[8 8]
+2016-09-21 13:23:35.455 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.456 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.462 b.s.d.executor [INFO] Shut down executor event_projection:[8 8]
+2016-09-21 13:23:35.464 b.s.d.executor [INFO] Shutting down executor __acker:[2 2]
+2016-09-21 13:23:35.465 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.465 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.468 b.s.d.executor [INFO] Shut down executor __acker:[2 2]
+2016-09-21 13:23:35.469 b.s.d.executor [INFO] Shutting down executor event_filter:[7 7]
+2016-09-21 13:23:35.470 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.470 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.472 b.s.d.executor [INFO] Shut down executor event_filter:[7 7]
+2016-09-21 13:23:35.473 b.s.d.executor [INFO] Shutting down executor ads:[3 3]
+2016-09-21 13:23:35.474 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.474 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.565 b.s.d.executor [INFO] Shut down executor ads:[3 3]
+2016-09-21 13:23:35.566 b.s.d.executor [INFO] Shutting down executor __acker:[1 1]
+2016-09-21 13:23:35.567 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.568 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.569 b.s.d.executor [INFO] Shut down executor __acker:[1 1]
+2016-09-21 13:23:35.570 b.s.d.executor [INFO] Shutting down executor event_deserializer:[6 6]
+2016-09-21 13:23:35.571 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.571 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.573 b.s.d.executor [INFO] Shut down executor event_deserializer:[6 6]
+2016-09-21 13:23:35.574 b.s.d.executor [INFO] Shutting down executor redis_join:[9 9]
+2016-09-21 13:23:35.575 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.575 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.576 b.s.d.executor [INFO] Shut down executor redis_join:[9 9]
+2016-09-21 13:23:35.577 b.s.d.executor [INFO] Shutting down executor __system:[-1 -1]
+2016-09-21 13:23:35.578 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.578 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.581 b.s.d.executor [INFO] Shut down executor __system:[-1 -1]
+2016-09-21 13:23:35.582 b.s.d.executor [INFO] Shutting down executor campaign_processor:[5 5]
+2016-09-21 13:23:35.583 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.583 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.585 b.s.d.executor [INFO] Shut down executor campaign_processor:[5 5]
+2016-09-21 13:23:35.587 b.s.d.executor [INFO] Shutting down executor campaign_processor:[4 4]
+2016-09-21 13:23:35.588 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.588 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.590 b.s.d.executor [INFO] Shut down executor campaign_processor:[4 4]
+2016-09-21 13:23:35.590 b.s.d.worker [INFO] Shut down executors
+2016-09-21 13:23:35.609 b.s.d.worker [INFO] Shutting down transfer thread
+2016-09-21 13:23:35.611 b.s.util [INFO] Async loop interrupted!
+2016-09-21 13:23:35.611 b.s.d.worker [INFO] Shut down transfer thread
+2016-09-21 13:23:35.619 b.s.d.worker [INFO] Shutting down default resources
+2016-09-21 13:23:35.620 b.s.d.worker [INFO] Shut down default resources
+2016-09-21 13:23:35.624 b.s.d.worker [INFO] Disconnecting from storm cluster state context
+2016-09-21 13:23:35.628 b.s.d.worker [INFO] Shut down worker test-topo-1-1474478426 6c8d362b-f48c-4c2f-8a74-0f782afb4f27 6700

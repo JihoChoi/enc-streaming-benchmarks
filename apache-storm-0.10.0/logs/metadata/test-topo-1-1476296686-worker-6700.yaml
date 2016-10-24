@@ -1,0 +1,4 @@
+topology.submitter.user: ''
+worker-id: ba5fa244-567d-4a53-95a6-f658fdc6edc1
+logs.groups: &id001 []
+logs.users: *id001
