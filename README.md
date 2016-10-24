@@ -3,7 +3,9 @@
 # enc-streaming-benchmarks
 -->
 
+
 Expansion of existing *Yahoo Streaming Benchmarks* to test encrypted streaming data.
+
 
 
 ###To test the benchmark:
@@ -40,7 +42,6 @@ Julian James Stephen | Email:
 					 | Web 	: 	https://www.cs.purdue.edu/homes/stephe22/
 Jiho Choi            | Email:	jihochoi1993@gmail.com
 					 | Web	:	http://web.ics.purdue.edu/~choi296/
-
 <!--
 	Julian James Stephen
 		Email	:
@@ -50,7 +51,6 @@ Jiho Choi            | Email:	jihochoi1993@gmail.com
 		Email	:	jihochoi1993@gmail.com
 		Web		:	http://web.ics.purdue.edu/~choi296/
 -->
-
 
 
 ###References
