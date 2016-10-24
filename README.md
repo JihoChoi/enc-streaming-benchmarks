@@ -1,12 +1,15 @@
 # enc-streaming-benchmarks
+
 Expansion of existing Yahoo Streaming Benchmarks to test encrypted streaming data.
 
 
-To test the benchmark: 
+To test the benchmark:
+
 	enc-streaming-benchmarks directory should be under same directory as phestorm directory
 
 	
 Important files
+
 	./streaming-bench.sh
 		added feature 
 			sh streaming-bench ENCRYPT_TEST
@@ -18,6 +21,7 @@ Important files
 
 
 TODO LIST
+
 	-
 	-
 	-
@@ -25,6 +29,7 @@ TODO LIST
 
 
 Expansion Contributer
+
 	Julian James Stephen
 		Email	:
 		Web 	: 	https://www.cs.purdue.edu/homes/stephe22/
