@@ -31,7 +31,7 @@ Expansion of existing *Yahoo Streaming Benchmarks* to test encrypted streaming d
 
 
 
-###Expansion Contributor
+###Expansion Contributors
 
 Contributor          | Info
 -------------------- | -------------
