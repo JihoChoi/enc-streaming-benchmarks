@@ -15,7 +15,7 @@ Expansion of existing *Yahoo Streaming Benchmarks* to test encrypted streaming d
 
 ###To test the benchmark:
 
-**enc-streaming-benchmarks** directory should be under same directory as **phestorm** directory
+**enc-streaming-benchmarks** directory should be under the same directory as **phestorm** directory
 
 
 ###Important files
