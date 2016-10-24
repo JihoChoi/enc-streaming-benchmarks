@@ -37,7 +37,7 @@ Expansion of existing *Yahoo Streaming Benchmarks* to test encrypted streaming d
 Contributor          | Info
 -------------------- | -------------
 Julian James Stephen | Email:	
-					   Web 	: 	https://www.cs.purdue.edu/homes/stephe22/
+					 | Web 	: 	https://www.cs.purdue.edu/homes/stephe22/
 Jiho Choi            | Email:	jihochoi1993@gmail.com
 					   Web	:	http://web.ics.purdue.edu/~choi296/
 
