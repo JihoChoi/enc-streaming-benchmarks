@@ -6,12 +6,12 @@
 Expansion of existing *Yahoo Streaming Benchmarks* to test encrypted streaming data.
 
 
-#To test the benchmark:
+###To test the benchmark:
 
 	**enc-streaming-benchmarks** directory should be under same directory as **phestorm** directory
 
 	
-#Important files
+###Important files
 
 	./streaming-bench.sh
 		added feature 
@@ -23,7 +23,7 @@ Expansion of existing *Yahoo Streaming Benchmarks* to test encrypted streaming d
 		connecting benchmark with encryption classes
 
 
-#TODO LIST
+###TODO LIST
 
 	1.
 		..*
@@ -34,7 +34,7 @@ Expansion of existing *Yahoo Streaming Benchmarks* to test encrypted streaming d
 	5.
 
 
-#Expansion Contributor
+###Expansion Contributor
 
 Contributor          | Info
 -------------------- | -------------
@@ -55,11 +55,11 @@ Jiho Choi            | Email:	jihochoi1993@gmail.com
 
 
 
-#References
+###References
 
-	[Benchmarking Streaming Computation Engines at Yahoo!] (https://yahooeng.tumblr.com/post/135321837876/benchmarking-streaming-computation-engines-at)
+	[Benchmarking Streaming Computation Engines at Yahoo!](https://yahooeng.tumblr.com/post/135321837876/benchmarking-streaming-computation-engines-at)
 
-	[yahoo-streaming-benchmarks] (https://github.com/yahoo/streaming-benchmarks)
+	[yahoo-streaming-benchmarks](https://github.com/yahoo/streaming-benchmarks)
 	
 	Sanket Chintapalli, Derek Dagit, Bobby Evans, Reza Farivar, Thomas Graves, Mark Holderbaugh, Zhuo Liu, Kyle Nusbaum, Kishorkumar Patil, Boyang Jerry Peng, Paul Poulosky. "Benchmarking Streaming Computation Engines: Storm, Flink and Spark Streaming. " First Annual Workshop on Emerging Parallel and Distributed Runtime Systems and Middleware. IEEE, 2016.
 
