@@ -142,12 +142,18 @@
   ;(with-open [seen-file (clojure.java.io/writer "seen.txt")  
   ; TODO seen_LOAD00_TIME00.txt 
   (with-open [seen-file (clojure.java.io/writer "seen.txt")
-              updated-file (clojure.java.io/writer "updated.txt")]
-    (letfn [(data-printer [[seen updated]]
+              updated-file (clojure.java.io/writer "updated.txt")
+              time_updated-file (clojure.java.io/writer "time_updated.txt")
+              time_window-file (clojure.java.io/writer "time_window.txt")]
+    ;(letfn [(data-printer [[seen updated]]
+    (letfn [(data-printer [[seen updated time_updated time_window]]
               (.write seen-file (str seen "\n"))
               ; latency = last event emitted to kafka to campaign written to Redis 
               ; window-time (redis) - time_updated
               (.write updated-file (str updated "\n"))
+              (.write time_updated-file (str time_updated "\n"))
+              (.write time_window-file (str time_window "\n"))
+
               ;(.write updated-file (str "latency =" updated "\n"))
               (ResultViewer/getLatency updated))]
 
@@ -164,7 +170,8 @@
                              (let [window-key (redis/hget campaign window-time)
                                    seen (redis/hget window-key "seen_count")
                                    time_updated (redis/hget window-key "time_updated")]
-                               [seen (- (Long/parseLong time_updated) (Long/parseLong window-time))]))))))))))))
+                               ;[seen (- (Long/parseLong time_updated) (Long/parseLong window-time))]))))))))))))
+                               [seen (- (Long/parseLong time_updated) (Long/parseLong window-time)) (Long/parseLong time_updated) (Long/parseLong window-time)]))))))))))))
 ;
 ;
 
@@ -186,8 +193,8 @@
 
 (defn make-kafka-event-at [time with-skew? ads user-ids page-ids]
   
-  (.println java.lang.System/out "INSIDE core.clj/make-kafka-event-at ** ** **")
-  (.println java.lang.System/out "  ***   new regular message sent to KAFKA **")
+  ; (.println java.lang.System/out "INSIDE core.clj/make-kafka-event-at ** ** **")
+  ; (.println java.lang.System/out "  ***   new regular message sent to KAFKA **")
 
   (let [ad-types ["banner", "modal", "sponsored-search", "mail", "mobile"]
         event-types ["view", "click", "purchase"]
@@ -226,8 +233,8 @@
   ;;(javax.swing.JOptionPane/showMessageDialog nil (edu.purdue.cs.yahoobench.EncryptInput/toUpper "lower case") ) ;;
   ;;(javax.swing.JOptionPane/showMessageDialog nil (EncryptInput/toUpper "lower case") ) ;;
   
-  (.println java.lang.System/out "INSIDE core.clj/make-kafka-event-at-encrypt **")
-  (.println java.lang.System/out "  ***   new encrypted message sent to KAFKA **")
+  ; (.println java.lang.System/out "INSIDE core.clj/make-kafka-event-at-encrypt **")
+  ; (.println java.lang.System/out "  ***   new encrypted message sent to KAFKA **")
     
   (let [ad-types ["banner", "modal", "sponsored-search", "mail", "mobile"]
         event-types ["view", "click", "purchase"]
@@ -263,7 +270,6 @@
     ;                 (rand-nth ads) (rand-nth ad-types)  (rand-nth event-types)
     ;                  (str time)
     ; ) 
-
 
     (BenchReceiver/connect 
       (str "{\"user_id\": \"" (rand-nth user-ids)
@@ -408,4 +414,5 @@
       (:run options)                          (run (:throughput options) (:with-skew options) kafka-hosts redis-host) 
       ;(:runc options)                         (runc (:throughput options) (:with-skew options) kafka-hosts redis-host) 
       (:get-stats options)                    (get-stats redis-host)
-      :else                                   (println summary))))
+      :else                                   (println summary) )))
+      ;:else                                   (BenchReceiver/exportHashMap "0") )))

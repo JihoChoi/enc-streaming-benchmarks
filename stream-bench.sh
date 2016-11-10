@@ -42,7 +42,7 @@ LOAD=${LOAD:-20}
 CONF_FILE=./conf/localConf.yaml
 #TEST_TIME=${TEST_TIME:-240} #default
 #TEST_TIME=${TEST_TIME:-60}
-TEST_TIME=${TEST_TIME:-60}
+TEST_TIME=${TEST_TIME:-20}
 
 pid_match() {
    local VAL=`ps -aef | grep "$1" | grep -v grep | awk '{print $2}'`
@@ -205,7 +205,7 @@ run() {
     echo "START_LOAD"
     echo "***** ***** ***** ***** *****"
     cd data
-    start_if_needed leiningen.core.main "Load Generation" 1 $LEIN run -r -t $LOAD --configPath ../$CONF_FILE
+    start_if_needed leiningen.core.main "Load Generation" 1 $LEIN run -s -r -t $LOAD --configPath ../$CONF_FILE
     cd ..
 
   elif [ "START_ENCRYPT_LOAD" = "$OPERATION" ];
@@ -267,7 +267,7 @@ run() {
     run "STOP_KAFKA"
     run "STOP_REDIS"
     run "STOP_ZK"
-  elif [ "STOP_ALL" = "$OPERATION" ];
+  elif [ "STOP_ALL" = "$OPERATION" ] || [ "3" = "$OPERATION" ];
   then
     run "STOP_LOAD"
     run "STOP_STORM_TOPOLOGY"
@@ -285,7 +285,7 @@ run() {
     echo "Benchmark Options "
     echo "  1 ) STORM_TEST"
     echo "  2 ) ENCRYPT_TEST"
-    echo "  3 ) "
+    echo "  3 ) STOP_ALL"
     echo "  4 ) "
     echo
     echo 

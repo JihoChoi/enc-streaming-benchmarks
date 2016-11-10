@@ -34,6 +34,8 @@ public class CampaignProcessorCommon {
 
     public void prepare() {
 
+        /* TODO */
+
         campaign_windows = new LRUHashMap<Long, HashMap<String, Window>>(10);
         lastWindowMillis = System.currentTimeMillis();
         need_flush = new HashSet<CampaignWindowPair>();
@@ -59,6 +61,12 @@ public class CampaignProcessorCommon {
         Window window = getWindow(timeBucket, campaign_id);
         window.seenCount++;
 
+        System.out.println("+----------------------------------------+");
+        System.out.println("|   CampaignProcessorCommon              |");
+        System.out.println("|       execute                          |");
+        System.out.println("|       campaign_id : " + campaign_id);
+        System.out.println("|       window      : " + window.toString()); // window      : { time: 1478790580000, seen: 2 }
+        System.out.println("+----------------------------------------+");
         
         CampaignWindowPair newPair = new CampaignWindowPair(campaign_id, window);
         synchronized(need_flush) {

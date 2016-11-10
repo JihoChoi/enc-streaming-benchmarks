@@ -13,12 +13,27 @@ public class RedisAdCampaignCache {
     private HashMap<String, String> ad_to_campaign;
 
     public RedisAdCampaignCache(String redisServerHostname) {
+
+        System.out.println("    +--------------------------------------------------+");
+        System.out.println("    |   RedisAdCampaignCache                           |");
+        System.out.println("    |       constructor                                |");
+        System.out.println("    +--------------------------------------------------+");
+
+
+
         jedis = new Jedis(redisServerHostname);
     }
 
     public void prepare() {
+        
+        System.out.println("    +--------------------------------------------------+");
+        System.out.println("    |   RedisAdCampaignCache                           |");
+        System.out.println("    |       prepare                                    |");
+        System.out.println("    +--------------------------------------------------+");
+
         ad_to_campaign = new HashMap<String, String>();
     }
+
 
     public String execute(String ad_id) {
         //System.out.println("");
@@ -26,14 +41,21 @@ public class RedisAdCampaignCache {
         //System.out.println("ad_id : " + ad_id);
         //TODO
 
-        System.out.println("INSIDE RedisAdCampaignCache BEFORE REDIS");
-        System.out.println("ad_id : " + ad_id);
+        System.out.println("    +--------------------------------------------------+");
+        System.out.println("    |   RedisAdCampaignCache                           |");
+        System.out.println("    |       ad_id       : " + ad_id);
 
-
-        
         String campaign_id = ad_to_campaign.get(ad_id);
+
+        System.out.println("    |       campaign_id : " + campaign_id + " [From cache (HashMap)]");
+
         if(campaign_id == null) {
+
+//HERE
             campaign_id = jedis.get(ad_id);
+
+        System.out.println("    |       campaign_id : " + campaign_id + " [From jedis]");
+
             if(campaign_id == null) {
                 return null;
             }
@@ -41,6 +63,11 @@ public class RedisAdCampaignCache {
                 ad_to_campaign.put(ad_id, campaign_id);
             }
         }
+
+        System.out.println("    |       campaign_id : " + campaign_id);
+        System.out.println("    +--------------------------------------------------+");
+
+
         return campaign_id;
     }
 }

@@ -46,11 +46,22 @@ public class AdvertisingTopology {
 
         @Override
         public void prepare(Map conf, TopologyContext context, OutputCollector collector) {
+            
+            // System.out.println("+--------------------------------------------------+");
+            // System.out.println("|   DeserializeBolt                                |");
+            // System.out.println("|       prepare                                    |");
+            // System.out.println("+--------------------------------------------------+");
+
             _collector = collector;
         }
 
         @Override
         public void execute(Tuple tuple) {
+
+            // System.out.println("+--------------------------------------------------+");
+            // System.out.println("|   DeserializeBolt                                |");
+            // System.out.println("|       execute                                    |");
+            // System.out.println("+--------------------------------------------------+");
 
             JSONObject obj = new JSONObject(tuple.getString(0));
             _collector.emit(tuple, new Values(obj.getString("user_id"),
@@ -65,9 +76,17 @@ public class AdvertisingTopology {
 
         @Override
         public void declareOutputFields(OutputFieldsDeclarer declarer) {
+            
+            System.out.println("+--------------------------------------------------+");
+            System.out.println("|   DeserializeBolt                                |");
+            System.out.println("|       declareOutputFields                        |");
+            System.out.println("+--------------------------------------------------+");
+
+
             declarer.declare(new Fields("user_id", "page_id", "ad_id", "ad_type", "event_type", "event_time", "ip_address"));
         }
     }
+
 
     public static class EventFilterBolt extends BaseRichBolt {
         OutputCollector _collector;
@@ -80,9 +99,6 @@ public class AdvertisingTopology {
         @Override
         public void execute(Tuple tuple) {
 
-            System.out.println("** ** ** ** ******* ** ** ** ** **");
-            System.out.println("    INSIDE EventFilterBolt");
-
             if(tuple.getStringByField("event_type").equals("view")) {
                 _collector.emit(tuple, tuple.getValues());
             }
@@ -91,6 +107,12 @@ public class AdvertisingTopology {
 
         @Override
         public void declareOutputFields(OutputFieldsDeclarer declarer) {
+        
+            System.out.println("+--------------------------------------------------+");
+            System.out.println("|   EventFilterBolt                                |");
+            System.out.println("|       declareOutputFields                        |");
+            System.out.println("+--------------------------------------------------+");
+
             declarer.declare(new Fields("user_id", "page_id", "ad_id", "ad_type", "event_type", "event_time", "ip_address"));
         }
     }
@@ -106,9 +128,7 @@ public class AdvertisingTopology {
         @Override
         public void execute(Tuple tuple) {
 
-            System.out.println("** ** ** ** ******* ** ** ** ** **");
-            System.out.println("    INSIDE EventProjectionBolt");
-
+            
             _collector.emit(tuple, new Values(tuple.getStringByField("ad_id"),
                                               tuple.getStringByField("event_time")));
             _collector.ack(tuple);
@@ -116,6 +136,12 @@ public class AdvertisingTopology {
 
         @Override
         public void declareOutputFields(OutputFieldsDeclarer declarer) {
+        
+            System.out.println("+--------------------------------------------------+");
+            System.out.println("|   EventProjectionBolt                            |");
+            System.out.println("|       declareOutputFields                        |");
+            System.out.println("+--------------------------------------------------+");
+
             declarer.declare(new Fields("ad_id", "event_time"));
         }
     }
@@ -130,6 +156,12 @@ public class AdvertisingTopology {
         }
 
         public void prepare(Map conf, TopologyContext context, OutputCollector collector) {
+            
+            System.out.println("+--------------------------------------------------+");
+            System.out.println("|   RedisJoinBolt                                  |");
+            System.out.println("|       prepare                                    |");
+            System.out.println("+--------------------------------------------------+");
+
             _collector = collector;
             redisAdCampaignCache = new RedisAdCampaignCache(redisServerHost);
             this.redisAdCampaignCache.prepare();
@@ -138,12 +170,15 @@ public class AdvertisingTopology {
         @Override
         public void execute(Tuple tuple) {
 
-            System.out.println("** ** ** ** ******* ** ** ** ** **");
-            System.out.println("    INSIDE RedisJoinBolt");
-
+            System.out.println("+--------------------------------------------------+");
+            System.out.println("|   RedisJoinBolt                                  |");
+            System.out.println("|       execute                                    |");
+            System.out.println("+--------------------------------------------------+");
 
             String ad_id = tuple.getStringByField("ad_id");
             /* */
+
+
             String campaign_id = this.redisAdCampaignCache.execute(ad_id);
             if(campaign_id == null) {
                 _collector.fail(tuple);
@@ -157,6 +192,12 @@ public class AdvertisingTopology {
 
         @Override
         public void declareOutputFields(OutputFieldsDeclarer declarer) {
+        
+            System.out.println("+--------------------------------------------------+");
+            System.out.println("|   RedisJoinBolt                                  |");
+            System.out.println("|       declareOutputFields                        |");
+            System.out.println("+--------------------------------------------------+");
+
             declarer.declare(new Fields("campaign_id", "ad_id", "event_time"));
         }
     }
@@ -174,6 +215,13 @@ public class AdvertisingTopology {
         }
 
         public void prepare(Map conf, TopologyContext context, OutputCollector collector) {
+    
+            System.out.println("+--------------------------------------------------+");
+            System.out.println("|   CampaignProcessor                              |");
+            System.out.println("|       prepare                                    |");
+            System.out.println("+--------------------------------------------------+");
+
+
             _collector = collector;
             campaignProcessorCommon = new CampaignProcessorCommon(redisServerHost);
             this.campaignProcessorCommon.prepare();
@@ -187,15 +235,26 @@ public class AdvertisingTopology {
 
             /* CampaignProcessorCommom */
 
-            System.out.println("campaign_id : " + campaign_id);
-            System.out.println("event_time : " + event_time);
+            System.out.println("+--------------------------------------------------+");
+            System.out.println("|   CampaignProcessor                              |");
+            System.out.println("|       execute                                    |");
+            System.out.println("|       campaign_id : " + campaign_id);
+            System.out.println("|       event_time  : " + event_time);
+            System.out.println("+--------------------------------------------------+");
 
             this.campaignProcessorCommon.execute(campaign_id, event_time);
             _collector.ack(tuple);
+
         }
 
         @Override
         public void declareOutputFields(OutputFieldsDeclarer declarer) {
+
+            System.out.println("+--------------------------------------------------+");
+            System.out.println("|   CampaignProcessor                              |");
+            System.out.println("|       declareOutputFields                        |");
+            System.out.println("+--------------------------------------------------+");
+
         }
     }
 
@@ -215,9 +274,12 @@ public class AdvertisingTopology {
     }
 
     public static void main(String[] args) throws Exception {
-        System.out.println("** ** ** ** ******* ** ** ** ** **");
-        System.out.println("INSIDE AdvertisingTopology main()");
-        System.out.println("** ** ** ** ******* ** ** ** ** **");
+
+
+        System.out.println("+--------------------------------------------------+");
+        System.out.println("|   AdvertisingTopology                            |");
+        System.out.println("|       main                                       |");
+        System.out.println("+--------------------------------------------------+");
 
         TopologyBuilder builder = new TopologyBuilder();
 
@@ -242,7 +304,6 @@ public class AdvertisingTopology {
         ZkHosts hosts = new ZkHosts(zkServerHosts);
 
 
-
         SpoutConfig spoutConfig = new SpoutConfig(hosts, kafkaTopic, "/" + kafkaTopic, UUID.randomUUID().toString());
         spoutConfig.scheme = new SchemeAsMultiScheme(new StringScheme());
         KafkaSpout kafkaSpout = new KafkaSpout(spoutConfig);
@@ -252,13 +313,16 @@ public class AdvertisingTopology {
         builder.setBolt("event_filter", new EventFilterBolt(), parallel).shuffleGrouping("event_deserializer");
         builder.setBolt("event_projection", new EventProjectionBolt(), parallel).shuffleGrouping("event_filter");
 
-            System.out.println("** ** ** ** ******* ** ** ** ** **");
-            System.out.println("BEFORE redis_join Bolt");
+        System.out.println("+----------------------------------------+");
+        System.out.println("|       BEFORE setBolt redis_join        |");
+        System.out.println("+----------------------------------------+");
 
-        builder.setBolt("redis_join", new RedisJoinBolt(redisServerHost), parallel).shuffleGrouping("event_projection");    
+        builder.setBolt("redis_join", new RedisJoinBolt(redisServerHost), parallel).shuffleGrouping("event_projection");
 
-            System.out.println("** ** ** ** ******* ** ** ** ** **");
-            System.out.println("BEFORE campaign_processor Bolt");
+        System.out.println("+----------------------------------------+");
+        System.out.println("|       BEFORE setBolt campaign_processor|");
+        //System.out.println("|       BEFORE setBolt redis_join        |");
+        System.out.println("+----------------------------------------+");
 
         builder.setBolt("campaign_processor", new CampaignProcessor(redisServerHost), parallel*2)
             .fieldsGrouping("redis_join", new Fields("campaign_id"));
