@@ -205,7 +205,7 @@ run() {
     echo "START_LOAD"
     echo "***** ***** ***** ***** *****"
     cd data
-    start_if_needed leiningen.core.main "Load Generation" 1 $LEIN run -s -r -t $LOAD --configPath ../$CONF_FILE
+    start_if_needed leiningen.core.main "Load Generation" 1 $LEIN run -r -t $LOAD --configPath ../$CONF_FILE
     cd ..
 
   elif [ "START_ENCRYPT_LOAD" = "$OPERATION" ];
